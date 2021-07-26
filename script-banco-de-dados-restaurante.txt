@@ -1,0 +1,21 @@
+create database restaurante;
+
+create table clientes (
+	id_cliente SERIAL CONSTRAINT pk_id_cliente PRIMARY KEY,
+	nome_cliente varchar(30)
+);
+
+create table produtos(
+	id_produtos SERIAL CONSTRAINT pk_id_produto PRIMARY KEY,
+	nome_produto varchar(30),
+	valor_produto decimal
+);
+
+create table conta(
+	id_conta SERIAL CONSTRAINT _pk_id_conta PRIMARY KEY,
+	total_conta decimal,
+	cliente integer,
+	produto integer,
+	FOREIGN KEY (cliente) REFERENCES clientes (id_cliente) ON DELETE CASCADE,
+	FOREIGN KEY (produto) REFERENCES produtos (id_produto) ON DELETE CASCADE 
+);
