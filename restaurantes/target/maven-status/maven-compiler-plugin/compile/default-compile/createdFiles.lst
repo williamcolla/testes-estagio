@@ -1,0 +1,12 @@
+mapeamentos\HibernateUtil.class
+controller\PaginaInicial.class
+dao\ProdutoDAO.class
+controller\ProdutoController.class
+model\Valores.class
+mapeamentos\Conta.class
+controller\ClienteController.class
+dao\InterfaceDAOGenerico.class
+mapeamentos\Clientes.class
+dao\ClienteDAO.class
+mapeamentos\Produtos.class
+dao\DAOGenerico.class
